@@ -2,4 +2,4 @@ const express = require("express");
 const app = express();
 
 app.use(express.static('./CardGame'));
-const port = app.listen(8080);
+app.listen(8080, () => {console.log("Server running at 8080")});
